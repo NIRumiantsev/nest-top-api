@@ -9,6 +9,7 @@ import { TopPageModule } from './top-page/top-page.module';
 import { ProductModule } from './product/product.module';
 import { ReviewModule } from './review/review.module';
 import { FilesModule } from './files/files.module';
+import { SitemapModule } from './sitemap/sitemap.module';
 
 @Module({
   imports: [
@@ -22,7 +23,8 @@ import { FilesModule } from './files/files.module';
     TopPageModule,
     ProductModule,
     ReviewModule,
-    FilesModule
+    FilesModule,
+    SitemapModule
   ],
   controllers: [AppController],
   providers: [AppService],
