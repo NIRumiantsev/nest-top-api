@@ -16,7 +16,7 @@ export class FilesService {
     const response: FileElementResponse[] = [];
     for (const file of files) {
       await writeFile(`${uploadFolder}/${file.originalname}`, file.buffer);
-      response.push({ url: `${uploadFolder}/${file.originalname}`, name: file.originalname })
+      response.push({ url: `${dateFolder}/${file.originalname}`, name: file.originalname })
     }
     return response;
   }
